@@ -41,11 +41,11 @@ const createSectionEl = () => {
 
 	const sectionHeadTitleEl = createElement(
 		'h2',
-		'section__title',
+		'cards-summary__title',
 		'Reliable, efficient delivery'
 	);
 
-	const sectionHeadSubtitleEl = createElement('p', 'section__subtitle');
+	const sectionHeadSubtitleEl = createElement('p', 'cards-summary__subtitle');
 
 	const sectionHeadSubtitleTextEl = createElement(
 		'strong',
@@ -57,7 +57,7 @@ const createSectionEl = () => {
 
 	const sectionHeadDescriptionEl = createElement(
 		'p',
-		'section__desc',
+		'cards-summary__desc',
 		'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
 	);
 
@@ -68,7 +68,7 @@ const createSectionEl = () => {
 	/* section body */
 	const sectionBodyEl = createElement('div', 'section__body');
 
-	const cardListEl = createElement('div', 'card__list');
+	const cardListEl = createElement('div', 'cards');
 
 	const cardBlocks = [
 		{
@@ -114,13 +114,10 @@ const createSectionEl = () => {
 	];
 
 	for (const cardBlock of cardBlocks) {
-		const cardBlockEl = createElement('div', 'card__list-block');
+		const cardBlockEl = createElement('div', 'cards__block');
 
 		for (const item of cardBlock.items) {
-			const cardItemEl = createElement(
-				'div',
-				`card__list-item card__list-item--${item.id}`
-			);
+			const cardItemEl = createElement('div', `card card--${item.id}`);
 
 			const cardItemTitleEl = createElement(
 				'h3',
