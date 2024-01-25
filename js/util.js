@@ -55,7 +55,7 @@ const createSectionEl = () => {
 
 	cardsSummarySubtitleEl.appendChild(sectionHeadSubtitleTextEl);
 
-	const cardsSummaryDescriptionEl = createElement(
+	const cardsSummaryDescEl = createElement(
 		'p',
 		'cards-summary__desc',
 		'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
@@ -63,7 +63,7 @@ const createSectionEl = () => {
 
 	sectionHeadEl.appendChild(cardsSummaryTitleEl);
 	sectionHeadEl.appendChild(cardsSummarySubtitleEl);
-	sectionHeadEl.appendChild(cardsSummaryDescriptionEl);
+	sectionHeadEl.appendChild(cardsSummaryDescEl);
 
 	/* section body */
 	const sectionBodyEl = createElement('div', 'section__body');
