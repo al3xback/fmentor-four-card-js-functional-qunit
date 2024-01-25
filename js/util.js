@@ -39,13 +39,13 @@ const createSectionEl = () => {
 	/* section head */
 	const sectionHeadEl = createElement('div', 'section__head');
 
-	const sectionHeadTitleEl = createElement(
+	const cardsSummaryTitleEl = createElement(
 		'h2',
 		'cards-summary__title',
 		'Reliable, efficient delivery'
 	);
 
-	const sectionHeadSubtitleEl = createElement('p', 'cards-summary__subtitle');
+	const cardsSummarySubtitleEl = createElement('p', 'cards-summary__subtitle');
 
 	const sectionHeadSubtitleTextEl = createElement(
 		'strong',
@@ -53,17 +53,17 @@ const createSectionEl = () => {
 		'Powered by Technology'
 	);
 
-	sectionHeadSubtitleEl.appendChild(sectionHeadSubtitleTextEl);
+	cardsSummarySubtitleEl.appendChild(sectionHeadSubtitleTextEl);
 
-	const sectionHeadDescriptionEl = createElement(
+	const cardsSummaryDescriptionEl = createElement(
 		'p',
 		'cards-summary__desc',
 		'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
 	);
 
-	sectionHeadEl.appendChild(sectionHeadTitleEl);
-	sectionHeadEl.appendChild(sectionHeadSubtitleEl);
-	sectionHeadEl.appendChild(sectionHeadDescriptionEl);
+	sectionHeadEl.appendChild(cardsSummaryTitleEl);
+	sectionHeadEl.appendChild(cardsSummarySubtitleEl);
+	sectionHeadEl.appendChild(cardsSummaryDescriptionEl);
 
 	/* section body */
 	const sectionBodyEl = createElement('div', 'section__body');
