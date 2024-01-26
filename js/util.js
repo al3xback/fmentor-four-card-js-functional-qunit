@@ -45,7 +45,10 @@ const createSectionEl = () => {
 		'Reliable, efficient delivery'
 	);
 
-	const cardsSummarySubtitleEl = createElement('p', 'cards-summary__subtitle');
+	const cardsSummarySubtitleEl = createElement(
+		'p',
+		'cards-summary__subtitle'
+	);
 
 	const cardsSummarySubtitleTextEl = createElement(
 		'strong',
